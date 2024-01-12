@@ -1,0 +1,43 @@
+
+/* Element selector */
+
+body {
+    background-color: aqua;
+
+}
+
+/* h1{
+    color: rgb(55, 124, 74);
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+p{
+    text-align: left;
+    color: blue;
+}
+
+/* Id selector */
+
+/* #para1
+{
+    text-align: center;
+    color: red;
+}
+
+/* Class selector */
+
+/* .common {
+  text-align: center;
+  color: rgb(234, 48, 110);
+} */ 
+
+/* Universal selector */
+*{
+    text-align: right;
+    color: rgb(1, 4, 6);
+}
+
+h1,p,#para1,h2{
+    text-align: left;
+    color: brown;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+function validate(){
+		
+var name=document.getElementById("name").value;
+var pwd=document.getElementById("pwd").value;
+var pwd1=document.getElementById("pwd1").value;
+if (name==null||name==""){
+	// alert("Enter a name");
+	document.getElementById("span1").innerHTML="Enter a Name";
+	return false;
+
+}
+if(pwd.length<6){
+
+	document.getElementById("span2").innerHTML="Password must be 8 characters";
+	return false;
+}
+if(pwd!=pwd1){
+
+	document.getElementById("span3").innerHTML="Passwords donot match";
+	return false;
+}
+
+
+	}
+</script>
+
+</head>
+<body>
+	
+	
+
+
+
+
+
+
+	<form name="form1" method="post" action=""  onsubmit="return validate()">
+	Name:<input type="text" id="name"><br>
+	<span id="span1" style="color:red"></span><br>
+	Password<input type="password" id="pwd"><br>
+	<span id="span2" style="color:red"></span><br>
+	Confirm password<input type="password" id="pwd1">
+	<span id="span3" style="color: red"></span><br>
+	<input type="submit" name="">
+</form>
+
+</body>
+</html>

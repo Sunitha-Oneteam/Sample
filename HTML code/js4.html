@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function formvalidate(){
+var a=document.getElementById("txt1").value;
+var email=document.getElementById("txt2").value;
+if(document.getElementById("radio1").checked==false){
+	alert("Select an option");
+}
+
+if(isNaN(a)){
+	alert("invalid input");
+}
+else{
+	alert("Ok")	;
+}
+var atpos=email.indexOf("@");
+var dotpos=email.indexOf(".")
+if(atpos<1||dotpos<atpos+2||dotpos+2>email.length){
+
+	alert("Email not valid");
+}
+
+
+	}
+	
+
+
+
+
+</script>
+<form method="post" onsubmit="return formvalidate()">
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+<input type="radio" id="radio1">
+<input type="submit" value="Ok">
+</form>
+</body>
+</html>
